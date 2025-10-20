@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Bounce™ - The Ball That Refuses to Quit</title>
+    <meta name="description" content="More than a ping pong ball — it's a symbol of persistence. You only lose when you stop bouncing.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-immersive.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">You only lose when you stop bouncing.</h1>
+                <p class="hero-subtitle">This ball sits on your desk as a daily reminder.</p>
+                <p class="hero-description">
+                    Life will knock you down.<br><br>
+
+                    The job won't work out.<br>
+                    The relationship will end.<br>
+                    The dream will feel impossible.<br><br>
+
+                    But here's what matters:<br>
+                    <strong>Do you get back up?</strong><br><br>
+
+                    This isn't just a ping pong ball.<br>
+                    It's your reminder to keep going.
+                </p>
+                <div class="price-tag">
+                    <span class="price">$9.95</span>
+                    <span class="price-note">Free worldwide shipping</span>
+                </div>
+                <button class="cta-button" id="buyButton">
+                    Get Yours
+                </button>
+                <div class="trust-badges">
+                    <span>Ships in 2-3 days</span>
+                    <span>Premium gift packaging</span>
+                    <span>Display stand included</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="ball-container">
+                    <svg viewBox="0 0 200 200" class="tennis-ball">
+                        <defs>
+                            <radialGradient id="ballGradient">
+                                <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                                <stop offset="70%" style="stop-color:#f5f5f5;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+                            </radialGradient>
+                            <filter id="shadow">
+                                <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.3"/>
+                            </filter>
+                        </defs>
+                        <!-- Ball -->
+                        <circle cx="100" cy="100" r="85" fill="url(#ballGradient)" filter="url(#shadow)"/>
+                        <!-- Orange accent line -->
+                        <circle cx="100" cy="100" r="85" fill="none" stroke="#FF6B35" stroke-width="2" opacity="0.8"/>
+                        <!-- Infinity symbol as bounce arc -->
+                        <path d="M 50 100 Q 75 70, 100 100 T 150 100" stroke="#FF6B35" stroke-width="3" fill="none" opacity="0.6"/>
+                        <!-- Text -->
+                        <text x="100" y="105" text-anchor="middle" fill="#1a1a1a" font-size="16" font-weight="600" font-family="Montserrat, sans-serif">the last</text>
+                        <text x="100" y="125" text-anchor="middle" fill="#1a1a1a" font-size="16" font-weight="600" font-family="Montserrat, sans-serif">bounce</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>Everyone faces setbacks.</h2>
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <div class="problem-icon">💼</div>
+                    <h3>Career</h3>
+                    <p>You applied to 47 companies.<br>You got 3 interviews.<br>You received 0 offers.</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">💔</div>
+                    <h3>Relationships</h3>
+                    <p>You thought this one was different.<br>You were wrong.<br>Now you're starting over. Again.</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">🎯</div>
+                    <h3>Dreams</h3>
+                    <p>You worked on it for 2 years.<br>It failed.<br>Everyone told you to quit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meaning Section -->
+    <section class="solution">
+        <div class="container">
+            <h2>But quitting isn't an option.</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>So you keep going.</h3>
+                    <p>You send another application.<br>You say yes to another date.<br>You start a new project.</p>
+                </div>
+                <div class="feature">
+                    <h3>Because that's what resilient people do.</h3>
+                    <p>They don't avoid failure.<br>They don't pretend it doesn't hurt.<br>They just refuse to stay down.</p>
+                </div>
+                <div class="feature">
+                    <h3>This ball is your reminder.</h3>
+                    <p>On hard days, look at it.<br>On impossible days, hold it.<br>On breakthrough days, remember it.</p>
+                </div>
+                <div class="feature">
+                    <h3>You only lose when you stop bouncing.</h3>
+                    <p>Not when you fail.<br>Not when you're rejected.<br>Only when you give up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>People who refuse to quit.</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"I got laid off 3 months ago. This sits on my desk while I rebuild. Every morning I see it. Every morning I remember: one more application. One more interview. One more bounce."</p>
+                    <p class="author">Alex M.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Our startup almost died in Q2. I bought one for every team member. Now when things get hard, someone holds up their ball. No words needed. We all know: keep bouncing."</p>
+                    <p class="author">Jennifer L.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"My daughter's relationship ended. She was devastated. I gave her this. She keeps it on her nightstand. She's doing better. Not because the ball is magic. Because it reminds her: she's not done yet."</p>
+                    <p class="author">Robert K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Philosophy -->
+    <section class="roi-calculator">
+        <div class="container">
+            <h2>What's engraved on the ball.</h2>
+            <div class="calculator" style="text-align: center;">
+                <div style="font-size: 2.2rem; font-weight: 300; color: #2d3748; margin: 40px 0; line-height: 1.7; letter-spacing: -0.5px;">
+                    "You only lose when you stop bouncing."
+                </div>
+                <p style="font-size: 1.1rem; max-width: 500px; margin: 0 auto; color: #718096; line-height: 1.9;">
+                    That's it.<br><br>
+
+                    No long motivational speech.<br>
+                    No complicated philosophy.<br>
+                    Just the truth.<br><br>
+
+                    You can fail 100 times.<br>
+                    You can get rejected 1,000 times.<br>
+                    You can fall as many times as life wants to push you down.<br><br>
+
+                    None of that is losing.<br><br>
+
+                    You only lose when you stop getting back up.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Get yours.</h2>
+            <p class="cta-subtitle">Free shipping worldwide.</p>
+            <div class="pricing-box">
+                <div style="margin: 30px 0;">
+                    <div style="margin-bottom: 40px;">
+                        <div style="font-size: 0.95rem; color: #718096; margin-bottom: 8px;">Standard Edition</div>
+                        <span class="price-large">$9.95</span><br>
+                        <div style="font-size: 1rem; color: #a0aec0; margin-top: 12px;">
+                            1 ball + acrylic stand + premium gift box
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 40px; padding: 30px; background: #f7f8fa; border-radius: 12px; border: 1px solid #e2e8f0;">
+                        <div style="font-size: 0.95rem; color: #718096; margin-bottom: 8px;">Limited Edition</div>
+                        <span class="price-large" style="font-size: 2.5rem;">$19.95</span><br>
+                        <div style="font-size: 1rem; color: #a0aec0; margin-top: 12px;">
+                            Numbered (#1-1000) + wooden stand + certificate
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 30px;">
+                        <div style="font-size: 0.95rem; color: #718096; margin-bottom: 8px;">Gift Set</div>
+                        <span class="price-large" style="font-size: 2.5rem;">$29.95</span><br>
+                        <div style="font-size: 1rem; color: #a0aec0; margin-top: 12px;">
+                            3 balls + stands + booklet ("7 Laws of Bouncing Back")
+                        </div>
+                    </div>
+                </div>
+                <button class="cta-button" id="buyButton2">
+                    Order Now
+                </button>
+                <p class="guarantee">Ships in 2-3 days. No questions asked returns.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The Last Bounce. All rights reserved.</p>
+            <p>Contact: hello@thelastbounce.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

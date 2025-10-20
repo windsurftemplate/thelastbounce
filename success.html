@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed - The Last Bounce</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .success-container {
+            text-align: center;
+            padding: 60px 40px;
+            max-width: 600px;
+        }
+        .checkmark {
+            font-size: 100px;
+            margin-bottom: 30px;
+            animation: scaleIn 0.5s ease-out;
+        }
+        @keyframes scaleIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+        .order-details {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            backdrop-filter: blur(10px);
+        }
+        .btn {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3c72;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="checkmark">✓</div>
+        <h1>Thank You!</h1>
+        <p>Your order has been confirmed.</p>
+        <div class="order-details">
+            <h3>What's Next?</h3>
+            <p>You'll receive a confirmation email shortly with tracking information.</p>
+            <p>Your Last Bounce tennis balls will arrive in 5-7 business days.</p>
+            <p><strong>Free shipping included!</strong></p>
+        </div>
+        <p>Welcome to a lifetime of perfect bounce.</p>
+        <a href="/" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>
