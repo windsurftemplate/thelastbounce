@@ -1,46 +1,43 @@
 // Stripe Configuration
 const stripe = Stripe('pk_test_YOUR_PUBLISHABLE_KEY'); // Replace with your Stripe publishable key
 
-// ROI Calculator
-const playFrequencyInput = document.getElementById('playFrequency');
-const savingsDisplay = document.getElementById('savings');
-const ballsSavedDisplay = document.getElementById('ballsSaved');
-
-function calculateSavings() {
-    const timesPerWeek = parseInt(playFrequencyInput.value) || 3;
-
-    // Average player replaces balls every 2 weeks if playing 3x/week
-    const weeksPerCan = Math.max(1, Math.floor(6 / timesPerWeek));
-    const cansPerYear = Math.floor(52 / weeksPerCan);
-    const regularCost = cansPerYear * 9; // $9 per regular can
-    const lastBounceCost = 29.99; // One-time purchase
-    const savings = regularCost - lastBounceCost;
-
-    savingsDisplay.textContent = `$${Math.max(0, savings.toFixed(0))}`;
-    ballsSavedDisplay.textContent = cansPerYear;
-}
-
-playFrequencyInput.addEventListener('input', calculateSavings);
-calculateSavings();
+// Product configurations
+const products = {
+    single: {
+        name: 'Single Ball Edition',
+        price: 9.95,
+        priceId: 'price_single' // Replace with your Stripe Price ID
+    },
+    triple: {
+        name: 'Three Ball Gift Set',
+        price: 24.95,
+        priceId: 'price_triple' // Replace with your Stripe Price ID
+    },
+    team: {
+        name: 'Ten Ball Team Pack',
+        price: 79,
+        priceId: 'price_team' // Replace with your Stripe Price ID
+    }
+};
 
 // Buy Button Handler
-async function handlePurchase() {
+async function handlePurchase(productType = 'single') {
     // In production, this would call your backend to create a Checkout Session
-    // For now, we'll redirect to a placeholder
+    const product = products[productType];
 
-    alert('Payment integration coming soon! For early access, email hello@thelastbounce.com');
+    alert(`You selected: ${product.name} - $${product.price}\n\nPayment integration coming soon! For early access, email hello@thelastbounce.com`);
 
     // Example Stripe Checkout integration (uncomment when ready):
     /*
     try {
-        const response = await fetch('/create-checkout-session', {
+        const response = await fetch('/api/create-checkout-session', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
                 quantity: 1,
-                priceId: 'price_YOUR_PRICE_ID' // Replace with your Stripe Price ID
+                priceId: product.priceId
             })
         });
 
@@ -60,8 +57,11 @@ async function handlePurchase() {
     */
 }
 
-document.getElementById('buyButton').addEventListener('click', handlePurchase);
-document.getElementById('buyButton2').addEventListener('click', handlePurchase);
+// Attach event listeners to all buy buttons
+document.getElementById('buyButton').addEventListener('click', () => handlePurchase('single'));
+document.getElementById('buyButton2').addEventListener('click', () => handlePurchase('single'));
+document.getElementById('buyButton3').addEventListener('click', () => handlePurchase('triple'));
+document.getElementById('buyButton4').addEventListener('click', () => handlePurchase('team'));
 
 // Smooth scroll for better UX
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
