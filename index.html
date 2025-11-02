@@ -3,45 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Last Bounce™ - The Perfect Gift for Anyone Starting Over</title>
-    <meta name="description" content="A meaningful gift for career transitions, new beginnings, and anyone who needs a reminder to keep going. Free worldwide shipping.">
+    <title>The Last Bounce™ - You Only Lose When You Stop Bouncing</title>
+    <meta name="description" content="A desk reminder for anyone between jobs, starting over, or facing rejection. Keep bouncing. Free worldwide shipping.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles-immersive.css">
     <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
-    <!-- Hero Section -->
+    <!-- Hero Section - Oli Gardner Style: Bold, Clear, Conversion-Focused -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="badge">Perfect for Career Transitions & Gift Giving</div>
-                <h1 class="hero-title">You only lose when you stop bouncing.</h1>
-                <p class="hero-subtitle">A desk reminder for anyone facing a transition, setback, or new beginning.</p>
-                <p class="hero-description">
-                    Getting laid off. Starting over. Rebuilding confidence.<br>
-                    Job searching. Career pivoting. Finding your next move.<br><br>
+        <div class="hero-inner">
+            <!-- Attention-Grabbing Kicker -->
+            <div class="kicker">Got laid off? Between jobs? Starting over?</div>
 
-                    This ball reminds you (or someone you care about):<br>
-                    <strong>Keep going. One more application. One more try.</strong>
-                </p>
-                <div class="price-tag">
-                    <span class="price">$9.95</span>
-                    <span class="price-note">Free worldwide shipping • Gift ready packaging</span>
-                </div>
-                <button class="cta-button" id="buyButton">
-                    Get The Last Bounce
-                </button>
-                <div class="trust-badges">
-                    <span>✓ Ships in 2-3 days</span>
-                    <span>✓ Premium gift box</span>
-                    <span>✓ Acrylic stand included</span>
-                    <span>✓ 14-day returns</span>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="ball-container">
+            <!-- Massive, Benefit-Driven Headline -->
+            <h1 class="hero-headline">
+                You Only Lose When You<br>
+                <span class="highlight-word">Stop Bouncing</span>
+            </h1>
+
+            <!-- Clear Value Proposition -->
+            <p class="hero-subheadline">
+                A simple desk reminder that sits next to your laptop and tells you:<br>
+                <strong>Keep going. One more application. One more try.</strong>
+            </p>
+
+            <!-- The Product -->
+            <div class="product-showcase">
+                <div class="product-image">
                     <svg viewBox="0 0 200 200" class="tennis-ball">
                         <defs>
                             <radialGradient id="ballGradient">
@@ -53,193 +44,246 @@
                                 <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.3"/>
                             </filter>
                         </defs>
-                        <!-- Ball -->
                         <circle cx="100" cy="100" r="85" fill="url(#ballGradient)" filter="url(#shadow)"/>
-                        <!-- Orange accent line -->
                         <circle cx="100" cy="100" r="85" fill="none" stroke="#FF6B35" stroke-width="2" opacity="0.8"/>
-                        <!-- Infinity symbol as bounce arc -->
                         <path d="M 50 100 Q 75 70, 100 100 T 150 100" stroke="#FF6B35" stroke-width="3" fill="none" opacity="0.6"/>
-                        <!-- Text -->
                         <text x="100" y="105" text-anchor="middle" fill="#1a1a1a" font-size="16" font-weight="600" font-family="Montserrat, sans-serif">the last</text>
                         <text x="100" y="125" text-anchor="middle" fill="#1a1a1a" font-size="16" font-weight="600" font-family="Montserrat, sans-serif">bounce</text>
                     </svg>
+                    <div class="product-callout">Engraved with your reminder</div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Use Cases Section -->
-    <section class="problem">
-        <div class="container">
-            <h2>Who is this for?</h2>
-            <div class="problem-grid">
-                <div class="problem-item">
-                    <div class="problem-icon">🎯</div>
-                    <h3>For Yourself</h3>
-                    <p>You're between jobs. Searching daily. Facing rejections. This sits on your desk and reminds you: one more application. One more try. You haven't lost until you stop.</p>
-                </div>
-                <div class="problem-item">
-                    <div class="problem-icon">🎁</div>
-                    <h3>For Someone You Care About</h3>
-                    <p>Your friend got laid off. Your sibling is pivoting careers. Your partner is rebuilding. Words aren't enough. Give them something tangible that says: I believe in you.</p>
-                </div>
-                <div class="problem-item">
-                    <div class="problem-icon">💼</div>
-                    <h3>For Your Team</h3>
-                    <p>Startups. Sales teams. Anyone facing setbacks together. Put one on every desk. Create a culture where resilience isn't just talked about—it's symbolized.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Real Stories Section -->
-    <section class="solution">
-        <div class="container">
-            <h2>Real stories from career transitions.</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <h3>"147 applications later, I got the offer."</h3>
-                    <p>This ball sat on my desk through every rejection. Every LinkedIn refresh. Every "we went with another candidate." When the offer finally came, this was the first thing I looked at. It was worth it.</p>
-                    <div class="author-small">— Sarah K., Software Engineer</div>
-                </div>
-                <div class="feature">
-                    <h3>"I bought 8 of these for my team."</h3>
-                    <p>Our startup almost died in Q3. I put one on every desk. Now when someone's struggling with a pitch or dealing with rejection, they just pick it up. It's become our thing. Keep bouncing.</p>
-                    <div class="author-small">— Marcus T., Founder</div>
-                </div>
-                <div class="feature">
-                    <h3>"Best gift I've ever received."</h3>
-                    <p>Got laid off after 8 years. My sister sent me this with a note: "You're not done yet." Cried. Then I got back to applications. 3 months later, better job, better salary. This never left my desk.</p>
-                    <div class="author-small">— James R., Product Manager</div>
-                </div>
-                <div class="feature">
-                    <h3>"It's such a simple reminder."</h3>
-                    <p>Career pivot at 38. Terrifying. This sits next to my laptop. Some days I need it more than others. But it's always there saying: one more day. One more try. Don't stop now.</p>
-                    <div class="author-small">— Priya M., Career Changer</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gift Giving Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>The perfect gift arrives in premium packaging.</h2>
-            <div class="gift-showcase">
-                <div class="gift-feature">
-                    <div class="gift-icon">📦</div>
-                    <h3>Gift-Ready Box</h3>
-                    <p>Premium black box with magnetic closure. No additional wrapping needed. Ready to give the moment it arrives.</p>
-                </div>
-                <div class="gift-feature">
-                    <div class="gift-icon">✨</div>
-                    <h3>Acrylic Display Stand</h3>
-                    <p>Crystal-clear stand included. Looks professional on any desk. Makes the ball the centerpiece it deserves to be.</p>
-                </div>
-                <div class="gift-feature">
-                    <div class="gift-icon">💌</div>
-                    <h3>Personal Note Card</h3>
-                    <p>Blank card included for your message. Tell them why you believe in them. Make it personal. Make it count.</p>
-                </div>
-            </div>
-            <div class="stats-bar">
-                <div class="stat">
-                    <div class="stat-number">2,847</div>
-                    <div class="stat-label">Shipped this month</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">94%</div>
-                    <div class="stat-label">Bought as gifts</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">4.9/5</div>
-                    <div class="stat-label">Average rating</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Philosophy -->
-    <section class="roi-calculator">
-        <div class="container">
-            <h2>What's engraved on the ball.</h2>
-            <div class="calculator" style="text-align: center;">
-                <div style="font-size: 2.5rem; font-weight: 400; color: white; margin: 40px 0; line-height: 1.5; letter-spacing: -1px;">
-                    "You only lose when you stop bouncing."
-                </div>
-                <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.9); line-height: 2;">
-                    That's it. No long speech. Just the truth.<br><br>
-
-                    You can get rejected 100 times.<br>
-                    You can fail every interview this month.<br>
-                    You can send applications into the void.<br><br>
-
-                    None of that is losing.<br><br>
-
-                    <strong style="color: white; font-size: 1.3rem;">You only lose when you stop trying.</strong>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="final-cta">
-        <div class="container">
-            <h2>Choose your edition.</h2>
-            <p class="cta-subtitle">Free worldwide shipping on all orders. Ships in 2-3 business days.</p>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <div class="pricing-label">For Yourself</div>
-                        <div class="price-large">$9.95</div>
-                        <div class="pricing-description">Single Ball Edition</div>
+                <div class="product-details">
+                    <!-- Instant Clarity: What You Get -->
+                    <div class="whats-included">
+                        <h3>What You Get:</h3>
+                        <ul class="included-list">
+                            <li><span class="check">✓</span> Premium engraved ball</li>
+                            <li><span class="check">✓</span> Crystal acrylic stand</li>
+                            <li><span class="check">✓</span> Gift-ready magnetic box</li>
+                            <li><span class="check">✓</span> Personal note card</li>
+                        </ul>
                     </div>
-                    <ul class="pricing-features">
-                        <li>✓ One engraved ball</li>
-                        <li>✓ Acrylic display stand</li>
-                        <li>✓ Premium gift box</li>
-                        <li>✓ Blank note card</li>
-                        <li>✓ Free worldwide shipping</li>
-                    </ul>
-                    <button class="cta-button" id="buyButton2">Get One Ball</button>
-                </div>
 
-                <div class="pricing-card featured">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <div class="pricing-label">Perfect Gift</div>
-                        <div class="price-large">$24.95</div>
-                        <div class="pricing-description">Three Ball Gift Set</div>
+                    <!-- Clear Pricing -->
+                    <div class="price-block">
+                        <div class="price-label">Just</div>
+                        <div class="price-main">$9.95</div>
+                        <div class="price-shipping">Free worldwide shipping included</div>
                     </div>
-                    <ul class="pricing-features">
-                        <li>✓ Three engraved balls</li>
-                        <li>✓ Three display stands</li>
-                        <li>✓ Premium gift box</li>
-                        <li>✓ Three note cards</li>
-                        <li>✓ Free worldwide shipping</li>
-                        <li>✓ <strong>Save $5 vs buying separately</strong></li>
-                    </ul>
-                    <button class="cta-button highlighted" id="buyButton3">Get Three Balls</button>
-                </div>
 
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <div class="pricing-label">For Teams</div>
-                        <div class="price-large">$79</div>
-                        <div class="pricing-description">Ten Ball Team Pack</div>
+                    <!-- Strong CTA -->
+                    <button class="cta-primary" id="buyButton">
+                        <span class="cta-text">Get Yours Now</span>
+                        <span class="cta-subtext">Ships in 2-3 days • 14-day guarantee</span>
+                    </button>
+
+                    <!-- Trust Indicators -->
+                    <div class="trust-line">
+                        <span class="trust-item">🔒 Secure checkout</span>
+                        <span class="trust-item">📦 2,847 shipped this month</span>
                     </div>
-                    <ul class="pricing-features">
-                        <li>✓ Ten engraved balls</li>
-                        <li>✓ Ten display stands</li>
-                        <li>✓ Bulk packaging</li>
-                        <li>✓ Team implementation guide</li>
-                        <li>✓ Free worldwide shipping</li>
-                        <li>✓ <strong>Save $20 vs buying separately</strong></li>
-                    </ul>
-                    <button class="cta-button" id="buyButton4">Get Team Pack</button>
                 </div>
             </div>
-            <p class="guarantee">14-day money-back guarantee. No questions asked. If it doesn't resonate, return it.</p>
+        </div>
+    </section>
+
+    <!-- The Problem (Oli's "Agitate the Pain" Section) -->
+    <section class="problem-section">
+        <div class="content-width">
+            <h2 class="section-headline">You know the feeling...</h2>
+
+            <div class="pain-points">
+                <div class="pain-point">
+                    <div class="pain-number">147</div>
+                    <div class="pain-text">
+                        <strong>Applications sent.</strong><br>
+                        3 interviews. 0 offers. Every "we went with another candidate" email feels like a punch.
+                    </div>
+                </div>
+
+                <div class="pain-point">
+                    <div class="pain-number">6am</div>
+                    <div class="pain-text">
+                        <strong>Refresh LinkedIn.</strong><br>
+                        Check email. Nothing. Apply to 5 more jobs. Repeat tomorrow. And the day after. And after.
+                    </div>
+                </div>
+
+                <div class="pain-point">
+                    <div class="pain-number">89 days</div>
+                    <div class="pain-text">
+                        <strong>Since you got laid off.</strong><br>
+                        Friends ask "how's the search going?" You smile. Inside, you're drowning. Is this ever going to end?
+                    </div>
+                </div>
+            </div>
+
+            <div class="transition-statement">
+                <p>Here's the truth: <strong>You haven't failed.</strong></p>
+                <p class="big-truth">You only fail when you stop trying.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof (Oli's "Show Don't Tell" Testimonials) -->
+    <section class="social-proof-section">
+        <div class="content-width">
+            <h2 class="section-headline">This ball has been there for 2,847 people this month</h2>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card featured-testimonial">
+                    <div class="quote-mark">"</div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text"><strong>147 applications later, I got the offer.</strong> This ball sat on my desk through every rejection. Every LinkedIn refresh. Every "we went with another candidate." When the offer finally came, this was the first thing I looked at.</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Sarah K.</div>
+                            <div class="author-title">Now: Software Engineer at Stripe</div>
+                            <div class="author-stat">89 days between jobs → Landed $180k role</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Got laid off after 8 years. My sister sent me this with a note: 'You're not done yet.' Cried. Then I got back to applications. <strong>3 months later: better job, better salary.</strong> This never left my desk."</p>
+                    <div class="testimonial-author-compact">
+                        <strong>James R.</strong> • Product Manager
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I bought 8 of these for my team. Our startup almost died in Q3. Now when someone's dealing with rejection, they just pick it up. <strong>It's become our thing.</strong> Keep bouncing."</p>
+                    <div class="testimonial-author-compact">
+                        <strong>Marcus T.</strong> • Founder, Series A startup
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Career pivot at 38. Terrifying. This sits next to my laptop. Some days I need it more than others. But it's always there saying: <strong>one more day. One more try.</strong>"</p>
+                    <div class="testimonial-author-compact">
+                        <strong>Priya M.</strong> • Career Changer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The "Why This Works" Section (Oli's Logic + Emotion) -->
+    <section class="why-section">
+        <div class="content-width">
+            <h2 class="section-headline">Why a ball? Why not another motivational poster?</h2>
+
+            <div class="why-grid">
+                <div class="why-reason">
+                    <div class="why-icon">🎾</div>
+                    <h3>It's physical</h3>
+                    <p>You can't ignore it. It sits on your desk. Right there. Every day. Every morning you see it before you start applying.</p>
+                </div>
+
+                <div class="why-reason">
+                    <div class="why-icon">♾️</div>
+                    <h3>Balls bounce</h3>
+                    <p>That's literally what they do. Drop them, they come back up. It's not a metaphor you have to decode. It's obvious. <strong>Keep bouncing.</strong></p>
+                </div>
+
+                <div class="why-reason">
+                    <div class="why-icon">💭</div>
+                    <h3>Simple message</h3>
+                    <p>Not 500 words of corporate motivation. Just one truth: <strong>"You only lose when you stop bouncing."</strong> That's it.</p>
+                </div>
+            </div>
+
+            <div class="engraving-showcase">
+                <div class="engraving-visual">
+                    <div class="engraved-text">"You only lose when you stop bouncing."</div>
+                    <p class="engraving-note">Permanently engraved on every ball</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA (Oli's "Clear Choices" Pricing) -->
+    <section class="final-cta-section">
+        <div class="content-width">
+            <div class="cta-header">
+                <h2 class="section-headline">Get your reminder</h2>
+                <p class="cta-intro">Choose the option that works for you. All come with free shipping and a 14-day guarantee.</p>
+            </div>
+
+            <div class="pricing-table">
+                <!-- Option 1: For Yourself -->
+                <div class="pricing-option">
+                    <div class="option-header">
+                        <h3 class="option-title">For Yourself</h3>
+                        <div class="option-price">
+                            <span class="price-amount">$9.95</span>
+                        </div>
+                    </div>
+                    <ul class="option-features">
+                        <li>1 engraved ball</li>
+                        <li>Acrylic stand</li>
+                        <li>Gift box</li>
+                        <li>Note card</li>
+                        <li>Free shipping</li>
+                    </ul>
+                    <button class="option-cta" id="buyButton2">Order Now</button>
+                </div>
+
+                <!-- Option 2: Gift Set (FEATURED) -->
+                <div class="pricing-option featured-option">
+                    <div class="featured-flag">MOST POPULAR</div>
+                    <div class="option-header">
+                        <h3 class="option-title">Perfect Gift</h3>
+                        <div class="option-price">
+                            <span class="price-amount">$24.95</span>
+                            <span class="price-note">Save $5</span>
+                        </div>
+                    </div>
+                    <ul class="option-features">
+                        <li><strong>3 engraved balls</strong></li>
+                        <li>3 acrylic stands</li>
+                        <li>Premium gift box</li>
+                        <li>3 note cards</li>
+                        <li>Free shipping</li>
+                    </ul>
+                    <button class="option-cta featured-cta" id="buyButton3">Get Gift Set</button>
+                </div>
+
+                <!-- Option 3: Team Pack -->
+                <div class="pricing-option">
+                    <div class="option-header">
+                        <h3 class="option-title">For Teams</h3>
+                        <div class="option-price">
+                            <span class="price-amount">$79</span>
+                            <span class="price-note">Save $20</span>
+                        </div>
+                    </div>
+                    <ul class="option-features">
+                        <li><strong>10 engraved balls</strong></li>
+                        <li>10 acrylic stands</li>
+                        <li>Bulk packaging</li>
+                        <li>Team guide</li>
+                        <li>Free shipping</li>
+                    </ul>
+                    <button class="option-cta" id="buyButton4">Order Team Pack</button>
+                </div>
+            </div>
+
+            <!-- Guarantee Banner -->
+            <div class="guarantee-box">
+                <div class="guarantee-icon">✓</div>
+                <div class="guarantee-text">
+                    <strong>14-Day Money-Back Guarantee.</strong> If it doesn't help, return it. No questions asked.
+                </div>
+            </div>
+
+            <!-- Final Trust Indicators -->
+            <div class="final-trust">
+                <span>🔒 Secure checkout</span>
+                <span>📦 Ships in 2-3 days</span>
+                <span>🌍 Free worldwide shipping</span>
+                <span>⭐ 4.9/5 average rating</span>
+            </div>
         </div>
     </section>
 
