@@ -8,80 +8,220 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles-immersive.css?v=4">
+    <link rel="stylesheet" href="styles-immersive.css?v=5">
     <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
-    <!-- Hero Section - Oli Gardner Style: Bold, Clear, Conversion-Focused -->
-    <section class="hero">
-        <div class="hero-inner">
-            <!-- Attention-Grabbing Kicker -->
-            <div class="kicker">Got laid off? Between jobs? Starting over?</div>
+    <!-- Hero Banner - Kickstarter Style -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <!-- Large Brand Title -->
+            <h1 class="brand-title">LAST BOUNCE</h1>
 
-            <!-- Massive, Benefit-Driven Headline -->
-            <h1 class="hero-headline">
-                You Only Lose When You<br>
-                <span class="highlight-word">Stop Bouncing</span>
-            </h1>
-
-            <!-- Clear Value Proposition -->
-            <p class="hero-subheadline">
-                A simple desk reminder that sits next to your laptop and tells you:<br>
-                <strong>Keep going. One more application. One more try.</strong>
-            </p>
-
-            <!-- The Product -->
-            <div class="product-showcase">
-                <div class="product-image">
-                    <svg viewBox="0 0 200 200" class="tennis-ball">
-                        <defs>
-                            <radialGradient id="ballGradient">
-                                <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
-                                <stop offset="70%" style="stop-color:#f5f5f5;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
-                            </radialGradient>
-                            <filter id="shadow">
-                                <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.3"/>
-                            </filter>
-                        </defs>
-                        <circle cx="100" cy="100" r="85" fill="url(#ballGradient)" filter="url(#shadow)"/>
-                        <circle cx="100" cy="100" r="85" fill="none" stroke="#FF6B35" stroke-width="2" opacity="0.8"/>
-                        <path d="M 50 100 Q 75 70, 100 100 T 150 100" stroke="#FF6B35" stroke-width="3" fill="none" opacity="0.6"/>
-                        <text x="100" y="105" text-anchor="middle" fill="#1a1a1a" font-size="16" font-weight="600" font-family="Montserrat, sans-serif">the last</text>
-                        <text x="100" y="125" text-anchor="middle" fill="#1a1a1a" font-size="16" font-weight="600" font-family="Montserrat, sans-serif">bounce</text>
-                    </svg>
-                    <div class="product-callout">Engraved with your reminder</div>
+            <!-- Hero Visual Banner -->
+            <div class="hero-visual">
+                <div class="hero-left">
+                    <div class="hero-text-card">
+                        <h2>"FALL? SEVEN<br>STAND BOING<br>WITH"</h2>
+                        <p>Keep bouncing through every rejection</p>
+                        <button class="cta-primary hero-cta" id="buyButton">Back This Project</button>
+                    </div>
                 </div>
 
-                <div class="product-details">
-                    <!-- Instant Clarity: What You Get -->
-                    <div class="whats-included">
-                        <h3>What You Get:</h3>
-                        <ul class="included-list">
-                            <li><span class="check">✓</span> Premium engraved ball</li>
-                            <li><span class="check">✓</span> Crystal acrylic stand</li>
-                            <li><span class="check">✓</span> Gift-ready magnetic box</li>
-                            <li><span class="check">✓</span> Personal note card</li>
-                        </ul>
+                <div class="hero-center">
+                    <div class="product-frame">
+                        <div class="frame-image">
+                            <svg viewBox="0 0 200 200" class="tennis-ball-hero">
+                                <defs>
+                                    <radialGradient id="ballGradient">
+                                        <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                                        <stop offset="70%" style="stop-color:#f5f5f5;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+                                    </radialGradient>
+                                </defs>
+                                <circle cx="100" cy="100" r="85" fill="url(#ballGradient)"/>
+                                <circle cx="100" cy="100" r="85" fill="none" stroke="#FF6B35" stroke-width="2" opacity="0.8"/>
+                                <path d="M 50 100 Q 75 70, 100 100 T 150 100" stroke="#FF6B35" stroke-width="3" fill="none" opacity="0.6"/>
+                                <text x="100" y="105" text-anchor="middle" fill="#1a1a1a" font-size="16" font-weight="600">the last</text>
+                                <text x="100" y="125" text-anchor="middle" fill="#1a1a1a" font-size="16" font-weight="600">bounce</text>
+                            </svg>
+                        </div>
+                        <div class="frame-border"></div>
+                    </div>
+                    <div class="product-frame">
+                        <div class="frame-image white-bg">
+                            <div class="card-text">The Last Bounce</div>
+                        </div>
+                        <div class="frame-border"></div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="desk-lamp">💡</div>
+                    <div class="award-trophy">🏆</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area - Two Column Layout -->
+    <section class="main-content">
+        <div class="content-container">
+            <!-- Left Column - Product Info -->
+            <div class="left-column">
+                <!-- Product Image Card -->
+                <div class="product-card-main">
+                    <div class="product-image-large">
+                        <svg viewBox="0 0 300 300" class="tennis-ball-large">
+                            <defs>
+                                <radialGradient id="ballGradient2">
+                                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                                    <stop offset="70%" style="stop-color:#f5f5f5;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+                                </radialGradient>
+                            </defs>
+                            <rect width="300" height="300" fill="#1A1A1A"/>
+                            <circle cx="150" cy="150" r="100" fill="url(#ballGradient2)"/>
+                            <circle cx="150" cy="150" r="100" fill="none" stroke="#FF6B35" stroke-width="3" opacity="0.8"/>
+                            <path d="M 75 150 Q 112.5 105, 150 150 T 225 150" stroke="#FF6B35" stroke-width="4" fill="none" opacity="0.6"/>
+                            <text x="150" y="145" text-anchor="middle" fill="#1a1a1a" font-size="20" font-weight="700">THE LAST</text>
+                            <text x="150" y="170" text-anchor="middle" fill="#1a1a1a" font-size="20" font-weight="700">BOUNCE</text>
+                        </svg>
+                    </div>
+                    <div class="funding-badge">
+                        <div class="funding-amount">$29,847 Funded</div>
+                        <div class="funding-subtext">GOAL REACHED - Still Available</div>
+                    </div>
+                </div>
+
+                <!-- Story Section -->
+                <div class="story-section">
+                    <h2 class="story-headline">Fall Past the the Funnest, Littlest Boing<br>
+                    <span class="story-subheadline">Ever Getting Bounce</span></h2>
+
+                    <p class="story-text">Every rejection hurts. But this ball reminds you: bouncing back is what you do. It's not motivational BS. It's physics. Balls bounce. So do you.</p>
+
+                    <p class="story-text">147 applications. 89 days unemployed. 6am LinkedIn scrolling. We know the feeling. This ball sits on your desk and reminds you to keep going. One. More. Try.</p>
+                </div>
+
+                <!-- Feature Cards -->
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Bouncing Seller's Savings</h3>
+                        <p>Right now—til Dec 25—all at once discount select bundle packs! Grab them while supplies last for great gift-ready rewards!</p>
                     </div>
 
-                    <!-- Clear Pricing -->
-                    <div class="price-block">
-                        <div class="price-label">Just</div>
-                        <div class="price-main">$9.95</div>
-                        <div class="price-shipping">Free worldwide shipping included</div>
+                    <div class="feature-card">
+                        <h3>Your Extraordinarily may Indomitates</h3>
+                        <p>Every word could fail! About the lift the drop all of truth. Scientifically silver longing for knock-down and drift with every application.</p>
+                    </div>
+                </div>
+
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="gallery-item">
+                        <div class="gallery-frame">
+                            <div class="gallery-image black-bg">
+                                <div class="gallery-content">
+                                    <div class="large-number">1</div>
+                                </div>
+                            </div>
+                            <button class="gallery-cta">$10</button>
+                        </div>
+                        <p class="gallery-label">Just Yourself</p>
                     </div>
 
-                    <!-- Strong CTA -->
-                    <button class="cta-primary" id="buyButton">
-                        <span class="cta-text">Get Yours Now</span>
-                        <span class="cta-subtext">Ships in 2-3 days • 14-day guarantee</span>
-                    </button>
+                    <div class="gallery-item">
+                        <div class="gallery-frame">
+                            <div class="gallery-image white-bg">
+                                <div class="gallery-content">
+                                    <h3 class="gallery-text">FALL 7X TIMES<br>STANDUP<br>BOUNCE</h3>
+                                </div>
+                            </div>
+                            <button class="gallery-cta">$25</button>
+                        </div>
+                        <p class="gallery-label">Loved One (3-pack)</p>
+                    </div>
 
-                    <!-- Trust Indicators -->
-                    <div class="trust-line">
-                        <span class="trust-item">🔒 Secure checkout</span>
-                        <span class="trust-item">📦 2,847 shipped this month</span>
+                    <div class="gallery-item">
+                        <div class="gallery-frame">
+                            <div class="gallery-image black-bg">
+                                <div class="gallery-content">
+                                    <h3 class="gallery-text-white">BACK ON<br>YOUR<br>LAST<br>BOUNCE<br>FOURTH</h3>
+                                </div>
+                            </div>
+                            <button class="gallery-cta">$79</button>
+                        </div>
+                        <p class="gallery-label">Full Team (10-pack)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Pledge/Sidebar -->
+            <div class="right-column">
+                <div class="pledge-card sticky">
+                    <div class="pledge-header">
+                        <h3>Back This Project</h3>
+                        <div class="pledge-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">$29,847</div>
+                                <div class="stat-label">pledged of $5,000 goal</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2,847</div>
+                                <div class="stat-label">backers</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">14</div>
+                                <div class="stat-label">days to go</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pledge Options -->
+                    <div class="pledge-options">
+                        <div class="pledge-option">
+                            <div class="pledge-amount">Pledge $9.95 or more</div>
+                            <h4>Single Ball Edition</h4>
+                            <ul class="pledge-includes">
+                                <li>✓ 1 engraved ball</li>
+                                <li>✓ Acrylic stand</li>
+                                <li>✓ Gift box</li>
+                                <li>✓ Note card</li>
+                                <li>✓ Free worldwide shipping</li>
+                            </ul>
+                            <button class="pledge-button" id="buyButton2">Select This Reward</button>
+                            <div class="pledge-backers">847 backers</div>
+                        </div>
+
+                        <div class="pledge-option featured">
+                            <div class="pledge-badge">MOST POPULAR</div>
+                            <div class="pledge-amount">Pledge $24.95 or more</div>
+                            <h4>Three Ball Gift Set</h4>
+                            <ul class="pledge-includes">
+                                <li>✓ 3 engraved balls</li>
+                                <li>✓ 3 acrylic stands</li>
+                                <li>✓ Premium gift box</li>
+                                <li>✓ 3 note cards</li>
+                                <li>✓ Free worldwide shipping</li>
+                            </ul>
+                            <button class="pledge-button featured-btn" id="buyButton3">Select This Reward</button>
+                            <div class="pledge-backers">1,542 backers • Save $5</div>
+                        </div>
+
+                        <div class="pledge-option">
+                            <div class="pledge-amount">Pledge $79 or more</div>
+                            <h4>Team Pack (10 balls)</h4>
+                            <ul class="pledge-includes">
+                                <li>✓ 10 engraved balls</li>
+                                <li>✓ 10 acrylic stands</li>
+                                <li>✓ Bulk packaging</li>
+                                <li>✓ Team guide</li>
+                                <li>✓ Free worldwide shipping</li>
+                            </ul>
+                            <button class="pledge-button" id="buyButton4">Select This Reward</button>
+                            <div class="pledge-backers">458 backers • Save $20</div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 /* ====================================
    THE LAST BOUNCE - KICKSTARTER STYLE
-   Dark, Modern, High-Impact Design
+   Dark, Visual, Product-Focused Design
    ==================================== */
 
 /* Reset & Base */
@@ -18,190 +18,457 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Typography Hierarchy */
 h1, h2, h3 {
     line-height: 1.2;
     font-weight: 800;
 }
 
-/* Layout Containers */
-.hero-inner,
-.content-width {
-    max-width: 1200px;
+/* ====================================
+   HERO BANNER - Kickstarter Top Section
+   ==================================== */
+
+.hero-banner {
+    background: #0A0A0A;
+    padding: 40px 20px 60px;
+    border-bottom: 1px solid #2A2A2A;
+}
+
+.brand-title {
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.hero-visual {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 40px;
+    align-items: center;
+    background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+    padding: 60px 40px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.hero-left {
+    position: relative;
+}
+
+.hero-text-card {
+    background: #0A0A0A;
+    padding: 40px;
+    border-radius: 8px;
+    border: 2px solid #2A2A2A;
+}
+
+.hero-text-card h2 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
+.hero-text-card p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+}
+
+.hero-cta {
+    font-size: 1rem !important;
+    padding: 16px 32px !important;
+}
+
+.hero-center {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-frame {
+    position: relative;
+}
+
+.frame-image {
+    background: #1A1A1A;
+    padding: 30px;
+    border-radius: 8px;
+    border: 3px solid #FFFFFF;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame-image.white-bg {
+    background: #FFFFFF;
+    border-color: #0A0A0A;
+}
+
+.card-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0A0A0A;
+}
+
+.tennis-ball-hero {
+    width: 200px;
+    height: 200px;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.desk-lamp, .award-trophy {
+    font-size: 4rem;
+    opacity: 0.6;
 }
 
 /* ====================================
-   HERO SECTION - Kickstarter Dark Theme
+   MAIN CONTENT - Two Column Layout
    ==================================== */
 
-.hero {
-    background: #0A0A0A;
-    padding: 80px 20px 100px;
+.main-content {
+    background: #FFFFFF;
+    padding: 60px 20px;
+}
+
+.content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+}
+
+/* Left Column Styles */
+.left-column {
+    color: #0A0A0A;
+}
+
+.product-card-main {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.product-image-large {
+    width: 100%;
+}
+
+.tennis-ball-large {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.funding-badge {
+    background: #00D66B;
+    color: #FFFFFF;
+    padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #2A2A2A;
 }
 
-/* Kicker - Attention Grabber */
-.kicker {
-    display: inline-block;
-    background: transparent;
-    color: #FFFFFF;
-    padding: 12px 28px;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 30px;
-    border: 2px solid #2A2A2A;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-}
-
-/* Hero Headline - MASSIVE */
-.hero-headline {
-    font-size: 4.5rem;
-    color: #FFFFFF;
-    margin-bottom: 30px;
+.funding-amount {
+    font-size: 1.8rem;
     font-weight: 900;
-    letter-spacing: -2px;
-    font-family: 'Playfair Display', Georgia, serif;
 }
 
-.highlight-word {
-    color: #00D66B;
-    position: relative;
-    display: inline-block;
+.funding-subtext {
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
 
-/* Subheadline - Clear Value Prop */
-.hero-subheadline {
-    font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 60px;
+.story-section {
+    margin-bottom: 50px;
+}
+
+.story-headline {
+    font-size: 2.5rem;
+    color: #0A0A0A;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.story-subheadline {
+    color: #666;
+    font-weight: 400;
+}
+
+.story-text {
+    font-size: 1.1rem;
+    color: #333;
     line-height: 1.8;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 20px;
 }
 
-.hero-subheadline strong {
-    color: #FFFFFF;
-    font-weight: 700;
-}
-
-/* Product Showcase - Side by Side */
-.product-showcase {
+.feature-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    max-width: 1100px;
-    margin: 0 auto;
-    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
-.product-image {
+.feature-card {
+    background: #F5F5F5;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #E5E5E5;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    color: #0A0A0A;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Product Gallery */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.gallery-item {
     text-align: center;
+}
+
+.gallery-frame {
+    border: 2px solid #E5E5E5;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.gallery-image {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
     position: relative;
 }
 
-.tennis-ball {
-    width: 350px;
-    height: 350px;
-    filter: drop-shadow(0 20px 60px rgba(0, 214, 107, 0.2));
+.gallery-image.black-bg {
+    background: #0A0A0A;
 }
 
-.product-callout {
-    margin-top: 20px;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.1rem;
-    font-weight: 500;
+.gallery-image.white-bg {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E5E5E5;
 }
 
-/* Product Details Box */
-.product-details {
-    background: #1A1A1A;
-    padding: 50px 45px;
-    border-radius: 16px;
-    border: 1px solid #2A2A2A;
-    text-align: left;
-}
-
-.whats-included h3 {
-    font-size: 1.3rem;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.included-list {
-    list-style: none;
-    margin-bottom: 35px;
-}
-
-.included-list li {
-    padding: 12px 0;
-    font-size: 1.05rem;
-    color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    align-items: center;
-}
-
-.check {
-    color: #00D66B;
-    font-weight: 700;
-    margin-right: 12px;
-    font-size: 1.2rem;
-}
-
-/* Price Block - Crystal Clear */
-.price-block {
+.gallery-content {
     text-align: center;
-    padding: 30px 0;
-    border-top: 1px solid #2A2A2A;
-    border-bottom: 1px solid #2A2A2A;
-    margin-bottom: 30px;
 }
 
-.price-label {
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
-.price-main {
-    font-size: 4rem;
-    color: #FFFFFF;
+.large-number {
+    font-size: 8rem;
     font-weight: 900;
-    letter-spacing: -2px;
-    line-height: 1;
+    color: #FFFFFF;
 }
 
-.price-shipping {
-    margin-top: 8px;
-    color: #00D66B;
-    font-weight: 600;
-    font-size: 1rem;
+.gallery-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #0A0A0A;
+    line-height: 1.3;
 }
 
-/* CTA Button - Kickstarter Green */
-.cta-primary {
+.gallery-text-white {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 1.3;
+}
+
+.gallery-cta {
     width: 100%;
     background: #00D66B;
-    color: #0A0A0A;
+    color: #FFFFFF;
     border: none;
-    padding: 24px 40px;
-    border-radius: 12px;
+    padding: 15px;
     font-size: 1.3rem;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s;
+}
+
+.gallery-cta:hover {
+    background: #00F57A;
+}
+
+.gallery-label {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Right Column - Pledge Card */
+.right-column {
+    position: relative;
+}
+
+.pledge-card {
+    background: #F9F9F9;
+    border: 2px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.pledge-card.sticky {
+    position: sticky;
+    top: 20px;
+}
+
+.pledge-header h3 {
+    font-size: 1.8rem;
+    color: #0A0A0A;
+    margin-bottom: 25px;
+}
+
+.pledge-stats {
+    border-bottom: 2px solid #E5E5E5;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.stat-item {
     margin-bottom: 20px;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #0A0A0A;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.pledge-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pledge-option {
+    background: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 25px;
+    position: relative;
+}
+
+.pledge-option.featured {
+    border-color: #00D66B;
+    border-width: 3px;
+}
+
+.pledge-badge {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: #00D66B;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.pledge-amount {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0A0A0A;
+    margin-bottom: 10px;
+}
+
+.pledge-option h4 {
+    font-size: 1.1rem;
+    color: #0A0A0A;
+    margin-bottom: 15px;
+}
+
+.pledge-includes {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.pledge-includes li {
+    padding: 8px 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.pledge-button {
+    width: 100%;
+    background: #2A2A2A;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 12px;
+}
+
+.pledge-button:hover {
+    background: #0A0A0A;
+}
+
+.pledge-button.featured-btn {
+    background: #00D66B;
+}
+
+.pledge-button.featured-btn:hover {
+    background: #00F57A;
+}
+
+.pledge-backers {
+    font-size: 0.9rem;
+    color: #666;
     text-align: center;
+}
+
+/* ====================================
+   CTA BUTTON - Kickstarter Green
+   ==================================== */
+
+.cta-primary {
+    background: #00D66B;
+    color: #0A0A0A;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 .cta-primary:hover {
@@ -209,474 +476,191 @@ h1, h2, h3 {
     transform: translateY(-2px);
 }
 
-.cta-text {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.cta-subtext {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: 500;
-    opacity: 0.9;
-}
-
-/* Trust Line */
-.trust-line {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
-    border-top: 1px solid #2A2A2A;
-}
-
-.trust-item {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 500;
-}
-
 /* ====================================
-   PROBLEM SECTION - Agitate the Pain
+   REMAINING SECTIONS (Dark Theme)
    ==================================== */
 
-.problem-section {
-    padding: 100px 20px;
+.problem-section,
+.social-proof-section,
+.why-section,
+.final-cta-section {
     background: #0A0A0A;
+    padding: 80px 20px;
     border-bottom: 1px solid #2A2A2A;
 }
 
+.content-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .section-headline {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-weight: 800;
-    letter-spacing: -1px;
 }
 
 .pain-points {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    margin-bottom: 80px;
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
 .pain-point {
-    text-align: center;
-    padding: 40px 30px;
     background: #1A1A1A;
-    border-radius: 12px;
+    padding: 35px;
+    border-radius: 8px;
     border: 1px solid #2A2A2A;
-    transition: all 0.3s ease;
-}
-
-.pain-point:hover {
-    border-color: #00D66B;
-    box-shadow: 0 10px 30px rgba(0, 214, 107, 0.2);
-    transform: translateY(-5px);
+    text-align: center;
 }
 
 .pain-number {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 900;
     color: #00D66B;
-    margin-bottom: 20px;
-    letter-spacing: -2px;
+    margin-bottom: 15px;
 }
 
 .pain-text {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
 }
 
 .pain-text strong {
     color: #FFFFFF;
-    font-weight: 700;
 }
 
-/* Transition Statement - The Pivot */
 .transition-statement {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 60px 40px;
     background: #1A1A1A;
-    border-radius: 16px;
+    padding: 50px;
+    border-radius: 8px;
     border: 1px solid #2A2A2A;
-    color: white;
+    text-align: center;
 }
 
 .transition-statement p {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 
 .big-truth {
-    font-size: 2.2rem !important;
+    font-size: 2rem !important;
     font-weight: 800 !important;
-    margin-top: 20px !important;
     color: #00D66B !important;
-    letter-spacing: -1px;
-}
-
-/* ====================================
-   SOCIAL PROOF SECTION
-   ==================================== */
-
-.social-proof-section {
-    padding: 100px 20px;
-    background: #0A0A0A;
-    border-bottom: 1px solid #2A2A2A;
 }
 
 .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 50px;
+    gap: 25px;
 }
 
 .testimonial-card {
     background: #1A1A1A;
-    padding: 35px;
-    border-radius: 12px;
+    padding: 30px;
+    border-radius: 8px;
     border: 1px solid #2A2A2A;
-    position: relative;
 }
 
 .featured-testimonial {
     grid-column: 1 / -1;
-    background: #1A1A1A;
-    border: 1px solid #00D66B;
-    padding: 50px;
-}
-
-.quote-mark {
-    position: absolute;
-    top: 20px;
-    left: 25px;
-    font-size: 80px;
-    color: #00D66B;
-    opacity: 0.2;
-    font-family: Georgia, serif;
-    line-height: 1;
-}
-
-.testimonial-content {
-    position: relative;
-    z-index: 1;
+    border-color: #00D66B;
 }
 
 .testimonial-text {
-    font-size: 1.15rem;
-    line-height: 1.8;
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 25px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 .testimonial-text strong {
     color: #00D66B;
-    font-weight: 700;
-}
-
-.testimonial-author {
-    border-top: 1px solid #2A2A2A;
-    padding-top: 20px;
 }
 
 .author-name {
-    font-size: 1.1rem;
-    font-weight: 700;
     color: #FFFFFF;
-    margin-bottom: 5px;
+    font-weight: 700;
 }
 
 .author-title {
-    font-size: 0.95rem;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 8px;
+    font-size: 0.9rem;
 }
 
 .author-stat {
-    font-size: 0.9rem;
     color: #00D66B;
-    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .testimonial-author-compact {
-    margin-top: 20px;
-    font-size: 0.95rem;
     color: rgba(255, 255, 255, 0.6);
-}
-
-/* ====================================
-   WHY SECTION
-   ==================================== */
-
-.why-section {
-    padding: 100px 20px;
-    background: #0A0A0A;
-    border-bottom: 1px solid #2A2A2A;
+    font-size: 0.9rem;
 }
 
 .why-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    margin-bottom: 80px;
-}
-
-.why-reason {
-    text-align: center;
-    padding: 40px 30px;
-    background: #1A1A1A;
-    border-radius: 12px;
-    border: 1px solid #2A2A2A;
-}
-
-.why-icon {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-}
-
-.why-reason h3 {
-    font-size: 1.5rem;
-    color: #FFFFFF;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-.why-reason p {
-    font-size: 1.05rem;
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 1.7;
-}
-
-/* Engraving Showcase */
-.engraving-showcase {
-    text-align: center;
-    padding: 60px 40px;
-    background: #1A1A1A;
-    border-radius: 16px;
-    border: 1px solid #2A2A2A;
-}
-
-.engraved-text {
-    font-size: 2.8rem;
-    color: #FFFFFF;
-    font-weight: 700;
-    margin-bottom: 20px;
-    line-height: 1.4;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-style: italic;
-}
-
-.engraving-note {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.1rem;
-}
-
-/* ====================================
-   FINAL CTA SECTION - Pricing Tables
-   ==================================== */
-
-.final-cta-section {
-    padding: 100px 20px;
-    background: #0A0A0A;
-}
-
-.cta-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.cta-intro {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.6);
-    max-width: 700px;
-    margin: 20px auto 0;
-}
-
-/* Pricing Table - Clean, Side-by-Side */
-.pricing-table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 50px;
 }
 
-.pricing-option {
+.why-reason {
     background: #1A1A1A;
-    border: 2px solid #2A2A2A;
-    border-radius: 16px;
-    padding: 40px 30px;
-    text-align: center;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.pricing-option:hover {
-    border-color: #00D66B;
-    box-shadow: 0 10px 40px rgba(0, 214, 107, 0.2);
-    transform: translateY(-5px);
-}
-
-.featured-option {
-    border-color: #00D66B;
-    border-width: 3px;
-    transform: scale(1.05);
-    box-shadow: 0 15px 50px rgba(0, 214, 107, 0.2);
-}
-
-.featured-option:hover {
-    transform: scale(1.05) translateY(-5px);
-}
-
-.featured-flag {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #00D66B;
-    color: #0A0A0A;
-    padding: 6px 20px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.option-header {
-    margin-bottom: 30px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #2A2A2A;
-}
-
-.option-title {
-    font-size: 1.4rem;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.option-price {
-    margin-bottom: 10px;
-}
-
-.price-amount {
-    font-size: 3.5rem;
-    color: #FFFFFF;
-    font-weight: 900;
-    letter-spacing: -2px;
-}
-
-.price-note {
-    display: block;
-    font-size: 0.9rem;
-    color: #00D66B;
-    font-weight: 600;
-    margin-top: 8px;
-}
-
-.option-features {
-    list-style: none;
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-.option-features li {
-    padding: 12px 0;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.7);
-    border-bottom: 1px solid #2A2A2A;
-}
-
-.option-features li:last-child {
-    border-bottom: none;
-}
-
-.option-cta {
-    width: 100%;
-    background: transparent;
-    color: #FFFFFF;
-    border: 2px solid #2A2A2A;
-    padding: 18px 30px;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.option-cta:hover {
-    background: #1A1A1A;
-    border-color: #00D66B;
-    transform: translateY(-2px);
-}
-
-.featured-cta {
-    background: #00D66B;
-    color: #0A0A0A;
-    border: none;
-}
-
-.featured-cta:hover {
-    background: #00F57A;
-}
-
-/* Guarantee Box - Risk Reversal */
-.guarantee-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px 40px;
-    background: #1A1A1A;
+    padding: 35px;
+    border-radius: 8px;
     border: 1px solid #2A2A2A;
-    border-radius: 12px;
-    margin-bottom: 40px;
+    text-align: center;
 }
 
-.guarantee-icon {
+.why-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.why-reason h3 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.why-reason p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.engraving-showcase {
+    background: #1A1A1A;
+    padding: 50px;
+    border-radius: 8px;
+    border: 1px solid #2A2A2A;
+    text-align: center;
+}
+
+.engraved-text {
     font-size: 2.5rem;
-    color: #00D66B;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-style: italic;
 }
 
-.guarantee-text {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.8);
+.engraving-note {
+    color: rgba(255, 255, 255, 0.7);
 }
-
-/* Final Trust Indicators */
-.final-trust {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.final-trust span {
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 500;
-}
-
-/* ====================================
-   FOOTER
-   ==================================== */
 
 footer {
     background: #0A0A0A;
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     border-top: 1px solid #2A2A2A;
 }
 
 footer p {
-    margin: 10px 0;
-    font-size: 0.95rem;
+    margin: 8px 0;
+    font-size: 0.9rem;
 }
 
 /* ====================================
@@ -684,75 +668,52 @@ footer p {
    ==================================== */
 
 @media (max-width: 1200px) {
-    .product-showcase {
+    .hero-visual {
         grid-template-columns: 1fr;
-        gap: 50px;
     }
 
+    .hero-center {
+        flex-direction: column;
+    }
+
+    .hero-right {
+        display: none;
+    }
+
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pledge-card.sticky {
+        position: static;
+    }
+
+    .product-gallery,
     .pain-points,
     .why-grid,
-    .pricing-table {
+    .feature-grid {
         grid-template-columns: 1fr;
     }
 
     .testimonial-grid {
         grid-template-columns: 1fr;
     }
-
-    .featured-option {
-        transform: scale(1);
-    }
 }
 
 @media (max-width: 768px) {
-    .hero-headline {
-        font-size: 2.8rem;
+    .brand-title {
+        font-size: 3rem;
     }
 
-    .tennis-ball {
-        width: 250px;
-        height: 250px;
+    .hero-text-card h2 {
+        font-size: 1.6rem;
     }
 
-    .section-headline {
-        font-size: 2.2rem;
-    }
-
-    .pain-number {
-        font-size: 2.5rem;
-    }
-
-    .engraved-text {
+    .story-headline {
         font-size: 1.8rem;
     }
 
-    .price-main,
-    .price-amount {
-        font-size: 2.8rem;
+    .section-headline {
+        font-size: 2rem;
     }
-
-    .product-details {
-        padding: 35px 25px;
-    }
-
-    .final-trust {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-/* Animation on scroll (subtle) */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-section {
-    animation: fadeInUp 0.6s ease both;
 }
