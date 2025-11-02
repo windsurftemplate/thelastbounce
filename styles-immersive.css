@@ -1,14 +1,6 @@
 /* ====================================
-   THE LAST BOUNCE - OLI GARDNER STYLE
-   Conversion-Optimized Landing Page
-
-   COLOR PALETTE (High-Converting):
-   - Primary Brand: #4F46E5 (Indigo - Trust & Premium)
-   - CTA Orange: #F97316 (High visibility & urgency)
-   - Success Green: #10B981 (Trust & guarantee)
-   - Dark Text: #1F2937 (99% readability)
-   - Light Gray: #F9FAFB (Subtle backgrounds)
-   - White: #FFFFFF (Clean sections)
+   THE LAST BOUNCE - KICKSTARTER STYLE
+   Dark, Modern, High-Impact Design
    ==================================== */
 
 /* Reset & Base */
@@ -21,12 +13,12 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: #1F2937;
-    background: #FFFFFF;
+    color: #FFFFFF;
+    background: #0A0A0A;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Typography Hierarchy (Oli's favorite: big, bold, clear) */
+/* Typography Hierarchy */
 h1, h2, h3 {
     line-height: 1.2;
     font-weight: 800;
@@ -41,26 +33,27 @@ h1, h2, h3 {
 }
 
 /* ====================================
-   HERO SECTION - Conversion-First
+   HERO SECTION - Kickstarter Dark Theme
    ==================================== */
 
 .hero {
-    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+    background: #0A0A0A;
     padding: 80px 20px 100px;
     text-align: center;
+    border-bottom: 1px solid #2A2A2A;
 }
 
 /* Kicker - Attention Grabber */
 .kicker {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.25);
-    color: white;
+    background: transparent;
+    color: #FFFFFF;
     padding: 12px 28px;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 30px;
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    border: 2px solid #2A2A2A;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -69,16 +62,15 @@ h1, h2, h3 {
 /* Hero Headline - MASSIVE */
 .hero-headline {
     font-size: 4.5rem;
-    color: white;
+    color: #FFFFFF;
     margin-bottom: 30px;
     font-weight: 900;
     letter-spacing: -2px;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     font-family: 'Playfair Display', Georgia, serif;
 }
 
 .highlight-word {
-    color: #FCD34D;
+    color: #00D66B;
     position: relative;
     display: inline-block;
 }
@@ -86,7 +78,7 @@ h1, h2, h3 {
 /* Subheadline - Clear Value Prop */
 .hero-subheadline {
     font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 60px;
     line-height: 1.8;
     max-width: 800px;
@@ -95,7 +87,7 @@ h1, h2, h3 {
 }
 
 .hero-subheadline strong {
-    color: white;
+    color: #FFFFFF;
     font-weight: 700;
 }
 
@@ -117,28 +109,28 @@ h1, h2, h3 {
 .tennis-ball {
     width: 350px;
     height: 350px;
-    filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 20px 60px rgba(0, 214, 107, 0.2));
 }
 
 .product-callout {
     margin-top: 20px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 1.1rem;
     font-weight: 500;
 }
 
 /* Product Details Box */
 .product-details {
-    background: white;
+    background: #1A1A1A;
     padding: 50px 45px;
     border-radius: 16px;
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2A2A2A;
     text-align: left;
 }
 
 .whats-included h3 {
     font-size: 1.3rem;
-    color: #2d3748;
+    color: #FFFFFF;
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -151,13 +143,13 @@ h1, h2, h3 {
 .included-list li {
     padding: 12px 0;
     font-size: 1.05rem;
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
 }
 
 .check {
-    color: #10B981;
+    color: #00D66B;
     font-weight: 700;
     margin-right: 12px;
     font-size: 1.2rem;
@@ -167,14 +159,14 @@ h1, h2, h3 {
 .price-block {
     text-align: center;
     padding: 30px 0;
-    border-top: 2px solid #e2e8f0;
-    border-bottom: 2px solid #e2e8f0;
+    border-top: 1px solid #2A2A2A;
+    border-bottom: 1px solid #2A2A2A;
     margin-bottom: 30px;
 }
 
 .price-label {
     font-size: 0.95rem;
-    color: #718096;
+    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -183,7 +175,7 @@ h1, h2, h3 {
 
 .price-main {
     font-size: 4rem;
-    color: #1F2937;
+    color: #FFFFFF;
     font-weight: 900;
     letter-spacing: -2px;
     line-height: 1;
@@ -191,16 +183,16 @@ h1, h2, h3 {
 
 .price-shipping {
     margin-top: 8px;
-    color: #10B981;
+    color: #00D66B;
     font-weight: 600;
     font-size: 1rem;
 }
 
-/* CTA Button - Oli's Style: Big, Clear, Action-Oriented */
+/* CTA Button - Kickstarter Green */
 .cta-primary {
     width: 100%;
-    background: #F97316;
-    color: white;
+    background: #00D66B;
+    color: #0A0A0A;
     border: none;
     padding: 24px 40px;
     border-radius: 12px;
@@ -208,15 +200,13 @@ h1, h2, h3 {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
     margin-bottom: 20px;
     text-align: center;
 }
 
 .cta-primary:hover {
-    background: #EA580C;
+    background: #00F57A;
     transform: translateY(-2px);
-    box-shadow: 0 12px 35px rgba(249, 115, 22, 0.5);
 }
 
 .cta-text {
@@ -236,12 +226,12 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-around;
     padding-top: 15px;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid #2A2A2A;
 }
 
 .trust-item {
     font-size: 0.9rem;
-    color: #718096;
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
 }
 
@@ -251,12 +241,13 @@ h1, h2, h3 {
 
 .problem-section {
     padding: 100px 20px;
-    background: #F9FAFB;
+    background: #0A0A0A;
+    border-bottom: 1px solid #2A2A2A;
 }
 
 .section-headline {
     font-size: 3rem;
-    color: #1F2937;
+    color: #FFFFFF;
     text-align: center;
     margin-bottom: 70px;
     font-weight: 800;
@@ -273,22 +264,22 @@ h1, h2, h3 {
 .pain-point {
     text-align: center;
     padding: 40px 30px;
-    background: white;
+    background: #1A1A1A;
     border-radius: 12px;
-    border: 2px solid #e2e8f0;
+    border: 1px solid #2A2A2A;
     transition: all 0.3s ease;
 }
 
 .pain-point:hover {
-    border-color: #4F46E5;
-    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.15);
+    border-color: #00D66B;
+    box-shadow: 0 10px 30px rgba(0, 214, 107, 0.2);
     transform: translateY(-5px);
 }
 
 .pain-number {
     font-size: 3.5rem;
     font-weight: 900;
-    color: #4F46E5;
+    color: #00D66B;
     margin-bottom: 20px;
     letter-spacing: -2px;
 }
@@ -296,11 +287,11 @@ h1, h2, h3 {
 .pain-text {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .pain-text strong {
-    color: #1F2937;
+    color: #FFFFFF;
     font-weight: 700;
 }
 
@@ -310,8 +301,9 @@ h1, h2, h3 {
     max-width: 700px;
     margin: 0 auto;
     padding: 60px 40px;
-    background: linear-gradient(135deg, #4F46E5, #7C3AED);
+    background: #1A1A1A;
     border-radius: 16px;
+    border: 1px solid #2A2A2A;
     color: white;
 }
 
@@ -324,7 +316,7 @@ h1, h2, h3 {
     font-size: 2.2rem !important;
     font-weight: 800 !important;
     margin-top: 20px !important;
-    color: #FCD34D !important;
+    color: #00D66B !important;
     letter-spacing: -1px;
 }
 
@@ -334,7 +326,8 @@ h1, h2, h3 {
 
 .social-proof-section {
     padding: 100px 20px;
-    background: white;
+    background: #0A0A0A;
+    border-bottom: 1px solid #2A2A2A;
 }
 
 .testimonial-grid {
@@ -345,17 +338,17 @@ h1, h2, h3 {
 }
 
 .testimonial-card {
-    background: #F9FAFB;
+    background: #1A1A1A;
     padding: 35px;
     border-radius: 12px;
-    border-left: 4px solid #4F46E5;
+    border: 1px solid #2A2A2A;
     position: relative;
 }
 
 .featured-testimonial {
     grid-column: 1 / -1;
-    background: linear-gradient(135deg, rgba(79, 70, 229, 0.08), rgba(124, 58, 237, 0.08));
-    border-left: 6px solid #4F46E5;
+    background: #1A1A1A;
+    border: 1px solid #00D66B;
     padding: 50px;
 }
 
@@ -364,7 +357,7 @@ h1, h2, h3 {
     top: 20px;
     left: 25px;
     font-size: 80px;
-    color: #4F46E5;
+    color: #00D66B;
     opacity: 0.2;
     font-family: Georgia, serif;
     line-height: 1;
@@ -378,43 +371,43 @@ h1, h2, h3 {
 .testimonial-text {
     font-size: 1.15rem;
     line-height: 1.8;
-    color: #1F2937;
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 25px;
 }
 
 .testimonial-text strong {
-    color: #4F46E5;
+    color: #00D66B;
     font-weight: 700;
 }
 
 .testimonial-author {
-    border-top: 2px solid #e2e8f0;
+    border-top: 1px solid #2A2A2A;
     padding-top: 20px;
 }
 
 .author-name {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #1F2937;
+    color: #FFFFFF;
     margin-bottom: 5px;
 }
 
 .author-title {
     font-size: 0.95rem;
-    color: #6B7280;
+    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 8px;
 }
 
 .author-stat {
     font-size: 0.9rem;
-    color: #10B981;
+    color: #00D66B;
     font-weight: 600;
 }
 
 .testimonial-author-compact {
     margin-top: 20px;
     font-size: 0.95rem;
-    color: #718096;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* ====================================
@@ -423,7 +416,8 @@ h1, h2, h3 {
 
 .why-section {
     padding: 100px 20px;
-    background: #F9FAFB;
+    background: #0A0A0A;
+    border-bottom: 1px solid #2A2A2A;
 }
 
 .why-grid {
@@ -436,9 +430,9 @@ h1, h2, h3 {
 .why-reason {
     text-align: center;
     padding: 40px 30px;
-    background: white;
+    background: #1A1A1A;
     border-radius: 12px;
-    border: 2px solid #e2e8f0;
+    border: 1px solid #2A2A2A;
 }
 
 .why-icon {
@@ -448,14 +442,14 @@ h1, h2, h3 {
 
 .why-reason h3 {
     font-size: 1.5rem;
-    color: #1F2937;
+    color: #FFFFFF;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
 .why-reason p {
     font-size: 1.05rem;
-    color: #4B5563;
+    color: rgba(255, 255, 255, 0.7);
     line-height: 1.7;
 }
 
@@ -463,13 +457,14 @@ h1, h2, h3 {
 .engraving-showcase {
     text-align: center;
     padding: 60px 40px;
-    background: linear-gradient(135deg, #4F46E5, #7C3AED);
+    background: #1A1A1A;
     border-radius: 16px;
+    border: 1px solid #2A2A2A;
 }
 
 .engraved-text {
     font-size: 2.8rem;
-    color: white;
+    color: #FFFFFF;
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.4;
@@ -478,17 +473,17 @@ h1, h2, h3 {
 }
 
 .engraving-note {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 1.1rem;
 }
 
 /* ====================================
-   FINAL CTA SECTION - Oli's Clear Pricing Tables
+   FINAL CTA SECTION - Pricing Tables
    ==================================== */
 
 .final-cta-section {
     padding: 100px 20px;
-    background: white;
+    background: #0A0A0A;
 }
 
 .cta-header {
@@ -498,7 +493,7 @@ h1, h2, h3 {
 
 .cta-intro {
     font-size: 1.2rem;
-    color: #718096;
+    color: rgba(255, 255, 255, 0.6);
     max-width: 700px;
     margin: 20px auto 0;
 }
@@ -512,8 +507,8 @@ h1, h2, h3 {
 }
 
 .pricing-option {
-    background: white;
-    border: 3px solid #e2e8f0;
+    background: #1A1A1A;
+    border: 2px solid #2A2A2A;
     border-radius: 16px;
     padding: 40px 30px;
     text-align: center;
@@ -522,16 +517,16 @@ h1, h2, h3 {
 }
 
 .pricing-option:hover {
-    border-color: #4F46E5;
-    box-shadow: 0 10px 40px rgba(79, 70, 229, 0.15);
+    border-color: #00D66B;
+    box-shadow: 0 10px 40px rgba(0, 214, 107, 0.2);
     transform: translateY(-5px);
 }
 
 .featured-option {
-    border-color: #F97316;
-    border-width: 4px;
+    border-color: #00D66B;
+    border-width: 3px;
     transform: scale(1.05);
-    box-shadow: 0 15px 50px rgba(249, 115, 22, 0.2);
+    box-shadow: 0 15px 50px rgba(0, 214, 107, 0.2);
 }
 
 .featured-option:hover {
@@ -543,8 +538,8 @@ h1, h2, h3 {
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: #F97316;
-    color: white;
+    background: #00D66B;
+    color: #0A0A0A;
     padding: 6px 20px;
     border-radius: 20px;
     font-size: 0.75rem;
@@ -555,12 +550,12 @@ h1, h2, h3 {
 .option-header {
     margin-bottom: 30px;
     padding-bottom: 25px;
-    border-bottom: 2px solid #e2e8f0;
+    border-bottom: 1px solid #2A2A2A;
 }
 
 .option-title {
     font-size: 1.4rem;
-    color: #1F2937;
+    color: #FFFFFF;
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -571,7 +566,7 @@ h1, h2, h3 {
 
 .price-amount {
     font-size: 3.5rem;
-    color: #1F2937;
+    color: #FFFFFF;
     font-weight: 900;
     letter-spacing: -2px;
 }
@@ -579,7 +574,7 @@ h1, h2, h3 {
 .price-note {
     display: block;
     font-size: 0.9rem;
-    color: #10B981;
+    color: #00D66B;
     font-weight: 600;
     margin-top: 8px;
 }
@@ -593,8 +588,8 @@ h1, h2, h3 {
 .option-features li {
     padding: 12px 0;
     font-size: 1rem;
-    color: #4a5568;
-    border-bottom: 1px solid #e2e8f0;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid #2A2A2A;
 }
 
 .option-features li:last-child {
@@ -603,9 +598,9 @@ h1, h2, h3 {
 
 .option-cta {
     width: 100%;
-    background: #4F46E5;
-    color: white;
-    border: none;
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #2A2A2A;
     padding: 18px 30px;
     border-radius: 10px;
     font-size: 1.1rem;
@@ -615,16 +610,19 @@ h1, h2, h3 {
 }
 
 .option-cta:hover {
-    background: #4338CA;
+    background: #1A1A1A;
+    border-color: #00D66B;
     transform: translateY(-2px);
 }
 
 .featured-cta {
-    background: #F97316;
+    background: #00D66B;
+    color: #0A0A0A;
+    border: none;
 }
 
 .featured-cta:hover {
-    background: #EA580C;
+    background: #00F57A;
 }
 
 /* Guarantee Box - Risk Reversal */
@@ -634,20 +632,20 @@ h1, h2, h3 {
     justify-content: center;
     gap: 20px;
     padding: 30px 40px;
-    background: #ECFDF5;
-    border: 2px solid #10B981;
+    background: #1A1A1A;
+    border: 1px solid #2A2A2A;
     border-radius: 12px;
     margin-bottom: 40px;
 }
 
 .guarantee-icon {
     font-size: 2.5rem;
-    color: #10B981;
+    color: #00D66B;
 }
 
 .guarantee-text {
     font-size: 1.1rem;
-    color: #1F2937;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* Final Trust Indicators */
@@ -660,7 +658,7 @@ h1, h2, h3 {
 
 .final-trust span {
     font-size: 0.95rem;
-    color: #718096;
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
 }
 
@@ -669,10 +667,11 @@ h1, h2, h3 {
    ==================================== */
 
 footer {
-    background: #1F2937;
+    background: #0A0A0A;
     padding: 60px 20px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid #2A2A2A;
 }
 
 footer p {
