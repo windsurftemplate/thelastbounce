@@ -8,221 +8,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles-immersive.css?v=5">
+    <link rel="stylesheet" href="styles-immersive.css?v=6">
     <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
-    <!-- Hero Banner - Kickstarter Style -->
-    <section class="hero-banner">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="hero-content">
-            <!-- Large Brand Title -->
-            <h1 class="brand-title">LAST BOUNCE</h1>
-
-            <!-- Hero Visual Banner -->
-            <div class="hero-visual">
-                <div class="hero-left">
-                    <div class="hero-text-card">
-                        <h2>"FALL? SEVEN<br>STAND BOING<br>WITH"</h2>
-                        <p>Keep bouncing through every rejection</p>
-                        <button class="cta-primary hero-cta" id="buyButton">Back This Project</button>
-                    </div>
+            <div class="hero-text">
+                <div class="kicker">Got laid off? Between jobs? Starting over?</div>
+                <h1 class="hero-headline">
+                    You Only Lose When You<br>
+                    <span class="highlight-word">Stop Bouncing</span>
+                </h1>
+                <p class="hero-subheadline">
+                    A simple desk reminder that sits next to your laptop and tells you:<br>
+                    <strong>Keep going. One more application. One more try.</strong>
+                </p>
+                <div class="hero-cta-group">
+                    <button class="cta-primary" id="buyButton">Get Yours Now - $9.95</button>
+                    <p class="cta-note">Free worldwide shipping • 14-day guarantee</p>
                 </div>
+            </div>
 
-                <div class="hero-center">
-                    <div class="product-frame">
-                        <div class="frame-image">
-                            <svg viewBox="0 0 200 200" class="tennis-ball-hero">
-                                <defs>
-                                    <radialGradient id="ballGradient">
-                                        <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
-                                        <stop offset="70%" style="stop-color:#f5f5f5;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
-                                    </radialGradient>
-                                </defs>
-                                <circle cx="100" cy="100" r="85" fill="url(#ballGradient)"/>
-                                <circle cx="100" cy="100" r="85" fill="none" stroke="#FF6B35" stroke-width="2" opacity="0.8"/>
-                                <path d="M 50 100 Q 75 70, 100 100 T 150 100" stroke="#FF6B35" stroke-width="3" fill="none" opacity="0.6"/>
-                                <text x="100" y="105" text-anchor="middle" fill="#1a1a1a" font-size="16" font-weight="600">the last</text>
-                                <text x="100" y="125" text-anchor="middle" fill="#1a1a1a" font-size="16" font-weight="600">bounce</text>
-                            </svg>
-                        </div>
-                        <div class="frame-border"></div>
-                    </div>
-                    <div class="product-frame">
-                        <div class="frame-image white-bg">
-                            <div class="card-text">The Last Bounce</div>
-                        </div>
-                        <div class="frame-border"></div>
-                    </div>
-                </div>
-
-                <div class="hero-right">
-                    <div class="desk-lamp">💡</div>
-                    <div class="award-trophy">🏆</div>
-                </div>
+            <div class="hero-product">
+                <svg viewBox="0 0 300 300" class="tennis-ball-hero">
+                    <defs>
+                        <radialGradient id="ballGradient">
+                            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                            <stop offset="70%" style="stop-color:#f5f5f5;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+                        </radialGradient>
+                    </defs>
+                    <circle cx="150" cy="150" r="120" fill="url(#ballGradient)"/>
+                    <circle cx="150" cy="150" r="120" fill="none" stroke="#FF6B35" stroke-width="3" opacity="0.8"/>
+                    <path d="M 60 150 Q 105 90, 150 150 T 240 150" stroke="#FF6B35" stroke-width="4" fill="none" opacity="0.6"/>
+                    <text x="150" y="140" text-anchor="middle" fill="#1a1a1a" font-size="24" font-weight="700">THE LAST</text>
+                    <text x="150" y="170" text-anchor="middle" fill="#1a1a1a" font-size="24" font-weight="700">BOUNCE</text>
+                </svg>
+                <p class="product-caption">Premium engraved ball with stand</p>
             </div>
         </div>
     </section>
 
-    <!-- Main Content Area - Two Column Layout -->
-    <section class="main-content">
-        <div class="content-container">
-            <!-- Left Column - Product Info -->
-            <div class="left-column">
-                <!-- Product Image Card -->
-                <div class="product-card-main">
-                    <div class="product-image-large">
-                        <svg viewBox="0 0 300 300" class="tennis-ball-large">
-                            <defs>
-                                <radialGradient id="ballGradient2">
-                                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
-                                    <stop offset="70%" style="stop-color:#f5f5f5;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
-                                </radialGradient>
-                            </defs>
-                            <rect width="300" height="300" fill="#1A1A1A"/>
-                            <circle cx="150" cy="150" r="100" fill="url(#ballGradient2)"/>
-                            <circle cx="150" cy="150" r="100" fill="none" stroke="#FF6B35" stroke-width="3" opacity="0.8"/>
-                            <path d="M 75 150 Q 112.5 105, 150 150 T 225 150" stroke="#FF6B35" stroke-width="4" fill="none" opacity="0.6"/>
-                            <text x="150" y="145" text-anchor="middle" fill="#1a1a1a" font-size="20" font-weight="700">THE LAST</text>
-                            <text x="150" y="170" text-anchor="middle" fill="#1a1a1a" font-size="20" font-weight="700">BOUNCE</text>
-                        </svg>
-                    </div>
-                    <div class="funding-badge">
-                        <div class="funding-amount">$29,847 Funded</div>
-                        <div class="funding-subtext">GOAL REACHED - Still Available</div>
-                    </div>
+    <!-- What's Included -->
+    <section class="whats-included-section">
+        <div class="content-width">
+            <h2 class="section-headline">What You Get</h2>
+            <div class="included-grid">
+                <div class="included-item">
+                    <div class="included-icon">🎾</div>
+                    <h3>Premium Engraved Ball</h3>
+                    <p>High-quality ball with "You only lose when you stop bouncing" permanently engraved</p>
                 </div>
-
-                <!-- Story Section -->
-                <div class="story-section">
-                    <h2 class="story-headline">Fall Past the the Funnest, Littlest Boing<br>
-                    <span class="story-subheadline">Ever Getting Bounce</span></h2>
-
-                    <p class="story-text">Every rejection hurts. But this ball reminds you: bouncing back is what you do. It's not motivational BS. It's physics. Balls bounce. So do you.</p>
-
-                    <p class="story-text">147 applications. 89 days unemployed. 6am LinkedIn scrolling. We know the feeling. This ball sits on your desk and reminds you to keep going. One. More. Try.</p>
+                <div class="included-item">
+                    <div class="included-icon">💎</div>
+                    <h3>Crystal Acrylic Stand</h3>
+                    <p>Beautiful display stand to keep it visible on your desk</p>
                 </div>
-
-                <!-- Feature Cards -->
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3>Bouncing Seller's Savings</h3>
-                        <p>Right now—til Dec 25—all at once discount select bundle packs! Grab them while supplies last for great gift-ready rewards!</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <h3>Your Extraordinarily may Indomitates</h3>
-                        <p>Every word could fail! About the lift the drop all of truth. Scientifically silver longing for knock-down and drift with every application.</p>
-                    </div>
+                <div class="included-item">
+                    <div class="included-icon">📦</div>
+                    <h3>Gift-Ready Box</h3>
+                    <p>Elegant magnetic box perfect for gifting</p>
                 </div>
-
-                <!-- Product Gallery -->
-                <div class="product-gallery">
-                    <div class="gallery-item">
-                        <div class="gallery-frame">
-                            <div class="gallery-image black-bg">
-                                <div class="gallery-content">
-                                    <div class="large-number">1</div>
-                                </div>
-                            </div>
-                            <button class="gallery-cta">$10</button>
-                        </div>
-                        <p class="gallery-label">Just Yourself</p>
-                    </div>
-
-                    <div class="gallery-item">
-                        <div class="gallery-frame">
-                            <div class="gallery-image white-bg">
-                                <div class="gallery-content">
-                                    <h3 class="gallery-text">FALL 7X TIMES<br>STANDUP<br>BOUNCE</h3>
-                                </div>
-                            </div>
-                            <button class="gallery-cta">$25</button>
-                        </div>
-                        <p class="gallery-label">Loved One (3-pack)</p>
-                    </div>
-
-                    <div class="gallery-item">
-                        <div class="gallery-frame">
-                            <div class="gallery-image black-bg">
-                                <div class="gallery-content">
-                                    <h3 class="gallery-text-white">BACK ON<br>YOUR<br>LAST<br>BOUNCE<br>FOURTH</h3>
-                                </div>
-                            </div>
-                            <button class="gallery-cta">$79</button>
-                        </div>
-                        <p class="gallery-label">Full Team (10-pack)</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Column - Pledge/Sidebar -->
-            <div class="right-column">
-                <div class="pledge-card sticky">
-                    <div class="pledge-header">
-                        <h3>Back This Project</h3>
-                        <div class="pledge-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">$29,847</div>
-                                <div class="stat-label">pledged of $5,000 goal</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">2,847</div>
-                                <div class="stat-label">backers</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">14</div>
-                                <div class="stat-label">days to go</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Pledge Options -->
-                    <div class="pledge-options">
-                        <div class="pledge-option">
-                            <div class="pledge-amount">Pledge $9.95 or more</div>
-                            <h4>Single Ball Edition</h4>
-                            <ul class="pledge-includes">
-                                <li>✓ 1 engraved ball</li>
-                                <li>✓ Acrylic stand</li>
-                                <li>✓ Gift box</li>
-                                <li>✓ Note card</li>
-                                <li>✓ Free worldwide shipping</li>
-                            </ul>
-                            <button class="pledge-button" id="buyButton2">Select This Reward</button>
-                            <div class="pledge-backers">847 backers</div>
-                        </div>
-
-                        <div class="pledge-option featured">
-                            <div class="pledge-badge">MOST POPULAR</div>
-                            <div class="pledge-amount">Pledge $24.95 or more</div>
-                            <h4>Three Ball Gift Set</h4>
-                            <ul class="pledge-includes">
-                                <li>✓ 3 engraved balls</li>
-                                <li>✓ 3 acrylic stands</li>
-                                <li>✓ Premium gift box</li>
-                                <li>✓ 3 note cards</li>
-                                <li>✓ Free worldwide shipping</li>
-                            </ul>
-                            <button class="pledge-button featured-btn" id="buyButton3">Select This Reward</button>
-                            <div class="pledge-backers">1,542 backers • Save $5</div>
-                        </div>
-
-                        <div class="pledge-option">
-                            <div class="pledge-amount">Pledge $79 or more</div>
-                            <h4>Team Pack (10 balls)</h4>
-                            <ul class="pledge-includes">
-                                <li>✓ 10 engraved balls</li>
-                                <li>✓ 10 acrylic stands</li>
-                                <li>✓ Bulk packaging</li>
-                                <li>✓ Team guide</li>
-                                <li>✓ Free worldwide shipping</li>
-                            </ul>
-                            <button class="pledge-button" id="buyButton4">Select This Reward</button>
-                            <div class="pledge-backers">458 backers • Save $20</div>
-                        </div>
-                    </div>
+                <div class="included-item">
+                    <div class="included-icon">💌</div>
+                    <h3>Personal Note Card</h3>
+                    <p>Add your own message for a personal touch</p>
                 </div>
             </div>
         </div>
@@ -342,87 +194,74 @@
         </div>
     </section>
 
-    <!-- Final CTA (Oli's "Clear Choices" Pricing) -->
-    <section class="final-cta-section">
+    <!-- Pricing Section -->
+    <section class="pricing-section">
         <div class="content-width">
-            <div class="cta-header">
-                <h2 class="section-headline">Get your reminder</h2>
-                <p class="cta-intro">Choose the option that works for you. All come with free shipping and a 14-day guarantee.</p>
-            </div>
+            <h2 class="section-headline">Choose Your Option</h2>
+            <p class="pricing-intro">All options include free worldwide shipping and our 14-day money-back guarantee</p>
 
-            <div class="pricing-table">
-                <!-- Option 1: For Yourself -->
-                <div class="pricing-option">
-                    <div class="option-header">
-                        <h3 class="option-title">For Yourself</h3>
-                        <div class="option-price">
-                            <span class="price-amount">$9.95</span>
-                        </div>
-                    </div>
-                    <ul class="option-features">
-                        <li>1 engraved ball</li>
-                        <li>Acrylic stand</li>
-                        <li>Gift box</li>
-                        <li>Note card</li>
-                        <li>Free shipping</li>
+            <div class="pricing-grid">
+                <!-- Option 1: Single -->
+                <div class="price-card">
+                    <h3 class="price-title">For Yourself</h3>
+                    <div class="price-amount">$9.95</div>
+                    <ul class="price-features">
+                        <li>✓ 1 engraved ball</li>
+                        <li>✓ Crystal acrylic stand</li>
+                        <li>✓ Gift-ready box</li>
+                        <li>✓ Personal note card</li>
+                        <li>✓ Free worldwide shipping</li>
                     </ul>
-                    <button class="option-cta" id="buyButton2">Order Now</button>
+                    <button class="price-cta" id="buyButton2">Order Now</button>
                 </div>
 
-                <!-- Option 2: Gift Set (FEATURED) -->
-                <div class="pricing-option featured-option">
-                    <div class="featured-flag">MOST POPULAR</div>
-                    <div class="option-header">
-                        <h3 class="option-title">Perfect Gift</h3>
-                        <div class="option-price">
-                            <span class="price-amount">$24.95</span>
-                            <span class="price-note">Save $5</span>
-                        </div>
-                    </div>
-                    <ul class="option-features">
-                        <li><strong>3 engraved balls</strong></li>
-                        <li>3 acrylic stands</li>
-                        <li>Premium gift box</li>
-                        <li>3 note cards</li>
-                        <li>Free shipping</li>
+                <!-- Option 2: Triple (Featured) -->
+                <div class="price-card featured">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <h3 class="price-title">Perfect Gift</h3>
+                    <div class="price-amount">$24.95</div>
+                    <div class="price-savings">Save $5</div>
+                    <ul class="price-features">
+                        <li>✓ 3 engraved balls</li>
+                        <li>✓ 3 crystal acrylic stands</li>
+                        <li>✓ Premium gift box</li>
+                        <li>✓ 3 personal note cards</li>
+                        <li>✓ Free worldwide shipping</li>
                     </ul>
-                    <button class="option-cta featured-cta" id="buyButton3">Get Gift Set</button>
+                    <button class="price-cta featured-cta" id="buyButton3">Get Gift Set</button>
                 </div>
 
-                <!-- Option 3: Team Pack -->
-                <div class="pricing-option">
-                    <div class="option-header">
-                        <h3 class="option-title">For Teams</h3>
-                        <div class="option-price">
-                            <span class="price-amount">$79</span>
-                            <span class="price-note">Save $20</span>
-                        </div>
-                    </div>
-                    <ul class="option-features">
-                        <li><strong>10 engraved balls</strong></li>
-                        <li>10 acrylic stands</li>
-                        <li>Bulk packaging</li>
-                        <li>Team guide</li>
-                        <li>Free shipping</li>
+                <!-- Option 3: Team -->
+                <div class="price-card">
+                    <h3 class="price-title">For Teams</h3>
+                    <div class="price-amount">$79</div>
+                    <div class="price-savings">Save $20</div>
+                    <ul class="price-features">
+                        <li>✓ 10 engraved balls</li>
+                        <li>✓ 10 crystal acrylic stands</li>
+                        <li>✓ Bulk packaging</li>
+                        <li>✓ Team motivation guide</li>
+                        <li>✓ Free worldwide shipping</li>
                     </ul>
-                    <button class="option-cta" id="buyButton4">Order Team Pack</button>
+                    <button class="price-cta" id="buyButton4">Order Team Pack</button>
                 </div>
             </div>
 
-            <!-- Guarantee Banner -->
-            <div class="guarantee-box">
+            <!-- Guarantee -->
+            <div class="guarantee-banner">
                 <div class="guarantee-icon">✓</div>
-                <div class="guarantee-text">
-                    <strong>14-Day Money-Back Guarantee.</strong> If it doesn't help, return it. No questions asked.
+                <div class="guarantee-content">
+                    <strong>14-Day Money-Back Guarantee</strong>
+                    <p>If it doesn't help, return it. No questions asked.</p>
                 </div>
             </div>
 
-            <!-- Final Trust Indicators -->
-            <div class="final-trust">
+            <!-- Trust Badges -->
+            <div class="trust-badges">
                 <span>🔒 Secure checkout</span>
                 <span>📦 Ships in 2-3 days</span>
                 <span>🌍 Free worldwide shipping</span>
-                <span>⭐ 4.9/5 average rating</span>
+                <span>⭐ 2,847 sold this month</span>
             </div>
         </div>
     </section>
